@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>咨询</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="小程序新设计" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-6-Copy">
+            <rect id="Rectangle-3" stroke="#979797" fill="#D8D8D8" opacity="0" x="0.5" y="0.5" width="39" height="39"></rect>
+            <g id="Group-31" transform="translate(2.000000, 3.000000)" stroke="#777777" stroke-width="2">
+                <path d="M5.68421053,12.2777778 C5.68421053,5.49694835 11.1981773,0 18,0 C24.8018227,0 30.3157895,5.49694835 30.3157895,12.2777778" id="Rectangle-90"></path>
+                <path d="M5.68421053,15.1111111 L5.68421053,26.4444444 C2.54490774,26.4444444 0,23.9073914 0,20.7777778 C0,17.6481642 2.54490774,15.1111111 5.68421053,15.1111111 Z" id="Combined-Shape"></path>
+                <path d="M36,15.1111111 L36,26.4444444 C32.8606972,26.4444444 30.3157895,23.9073914 30.3157895,20.7777778 C30.3157895,17.6481642 32.8606972,15.1111111 36,15.1111111 Z" id="Combined-Shape-Copy" transform="translate(33.157895, 20.777778) scale(-1, 1) translate(-33.157895, -20.777778) "></path>
+                <path d="M31.4947215,25.5 C31.3050319,26.5477285 30.9974697,27.3819041 30.5805744,28.1590246 C29.8374757,29.5442098 28.7470086,30.6313112 27.357535,31.3721164 C25.9680613,32.1129215 24.396753,32.5074304 21.754596,32.5074304 L19.8947368,32.5074304" id="Rectangle-92"></path>
+                <rect id="Rectangle-93" x="17.0526316" y="30.2222222" width="3.78947368" height="3.77777778" rx="1.88888889"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

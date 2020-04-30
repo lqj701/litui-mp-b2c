@@ -1,0 +1,5 @@
+.null-text {
+  margin-top: 30rpx;
+  font-size: 32rpx;
+  color: rgb(217, 217, 217);
+}

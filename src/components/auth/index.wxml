@@ -1,0 +1,31 @@
+<view
+  class='auth'
+  wx:if='{{visible}}'
+>
+
+  <view class='modal'>
+
+    <x-image
+      class='image'
+      src='/static/image/auth2@3x.png'
+      mode='widthFix'
+      width='600rpx'
+    />
+    <!--这里图片名不能有中文。。  -->
+
+    <view class='content'>{{content}}</view>
+
+    <form
+      bindsubmit='formSubmit'
+      report-submit='true'
+    >
+      <button
+        class='btn'
+        open-type='getUserInfo'
+        bindgetuserinfo='getAuth'
+        formType='submit'
+      > 确定 </button>
+    </form>
+  </view>
+
+</view>

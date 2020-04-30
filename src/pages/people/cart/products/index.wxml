@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="topbar">
+    <view class="left">共 {{products.length}} 个商品</view>
+    <view class="right" bindtap='editProducts'>{{state}}</view>
+  </view>
+  <view class="list">
+    <view class="item" wx:for='{{products}}' wx:key='{{item.id}}'>
+      <image class="icon select" src='/static/icon/select.svg' data-id="{{item.id}}" bindtap='select' wx:if='{{!item.select}}'></image>
+      <image class="icon select" src='/static/icon/select-active.svg' data-id="{{item.id}}" bindtap='select' wx:if='{{item.select}}'></image>
+      <image class="cover" src='{{item.ecGoodsImage}}' data-ecproductid="{{item.ecProductId}}" bindtap='gotoProduct'></image>
+      <view class="detail">
+        <view class="info" data-ecproductid="{{item.ecProductId}}" bindtap='gotoProduct'>
+          <view class="name">{{item.ecProductName}}</view>
+          <view class="value">{{item.value}}</view>
+        </view>
+        <view class="data">
+          <view class="price">¥{{item.price}}</view>
+          <Count class="count" ecGoodsId='{{item.id}}' count='{{item.count}}'></Count>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

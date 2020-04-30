@@ -1,0 +1,41 @@
+<view
+  class="menu"
+  wx:if="{{status === 'init'}}"
+>
+  <view class="bg-image"></view>
+  <view class="bg-filter"></view>
+  <view class="wrapper">
+    <view
+      class="start"
+      bind:tap='start'
+    >开始游戏</view>
+    <view class="more">
+      <view
+        class="more-item"
+        bind:tap='rank'
+      >排行榜</view>
+      <view
+        class="more-item"
+        bind:tap='unlock'
+      >解锁美图</view>
+      <view
+        class="more-item"
+        bind:tap="sponsor"
+      >赞助开发者</view>
+    </view>
+  </view>
+</view>
+
+<view
+  class="finish"
+  wx:if="{{status === 'finished'}}"
+>
+  <view class="bg-filter"></view>
+  <view class="wrapper">
+    <view class="score">您的成绩：{{score}}</view>
+    <view
+      class="start"
+      bind:tap='start'
+    >重新开始游戏</view>
+  </view>
+</view>

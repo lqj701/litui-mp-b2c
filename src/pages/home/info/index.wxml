@@ -1,0 +1,7 @@
+<x-image
+  class='image'
+  src='/static/image/home.png'
+  mode='aspectFill'
+  width="750rpx"
+  height="12640rpx"
+/>

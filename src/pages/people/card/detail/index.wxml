@@ -1,0 +1,10 @@
+<x-list
+  header='名片信息'
+  action='保存到通讯录'
+  content='{{listContent}}'
+  iconPosition='right'
+  wx:if='{{visible}}'
+  bind:clickItem='onClickItem'
+  bind:clickAction='onClickAction'
+  bind:submit='onSubmit'
+/>

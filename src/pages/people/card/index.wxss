@@ -1,0 +1,124 @@
+.scroller {
+  background: #eee;
+}
+
+.section {
+  margin-bottom: 30rpx;
+}
+
+.gohome {
+  position: fixed;
+  z-index: 10;
+  bottom: 40rpx;
+  right: 40rpx;
+  width: 92rpx;
+  height: 92rpx;
+  border-radius: 100%;
+  background-color: #4a8cf2;
+}
+
+.gohome-icon {
+  position: absolute;
+  z-index: 11;
+  left: 50%;
+  top: 50%;
+  overflow: hidden;
+  margin-top: -23rpx;
+  margin-left: -23rpx;
+}
+
+.unreadModalContent {
+  font-size: 32rpx;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.unreadModalTitle {
+  font-size: 40rpx;
+  margin-bottom: 20rpx;
+  line-height: 1;
+}
+
+.unreadModalForm {
+  width: 100%;
+}
+
+.unreadModalAction {
+  width: 100%;
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 32rpx;
+}
+
+.unreadModalButton {
+  background: transparent;
+  border-radius: 0;
+  color: #000;
+  margin: 0 0 0 40rpx;
+  padding: 0;
+  line-height: 1;
+}
+
+.unreadModalButton::after {
+  border: 0;
+}
+
+.unreadModalButton:nth-child(2) {
+  color: #1aad16;
+}
+
+.contactModalContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contactTitle {
+  display: none !important;
+}
+
+.contactAction {
+  display: none !important;
+}
+
+.contactModalContent .avatar {
+  width: 240rpx;
+  height: 240rpx;
+  margin-bottom: 40rpx;
+}
+
+.contactModalContent .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 360rpx;
+  height: 70rpx;
+  border: 2rpx solid #4A8CF2;
+  border-radius: 10rpx;
+  color: #4A8CF2;
+  font-size: 32rpx;
+  margin-bottom: 30rpx;
+}
+
+.contactModalContent .getPhoneNumber {
+  background: transparent;
+  font-size: 28rpx;
+  color: #4A8CF2;
+  text-align: center;
+  line-height: 1;
+}
+
+.contactModalContent .getPhoneNumber::after {
+  border: 0
+}
+
+.closeContactModal {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 26rpx;
+  height: 26rpx;
+  padding: 26rpx;
+}

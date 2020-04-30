@@ -1,0 +1,23 @@
+<view class='container'>
+  <scroll-view class='scroller' scrollY>
+    <Echeader title='{{ecHeader}}' bind:showShareModal='showShareModal'></Echeader>
+    <Cover data='{{coverData}}'></Cover>
+    <Introduce data='{{introduceData}}'></Introduce>
+  </scroll-view>
+  <Tabbar text='{{tabbarText}}' bindshowActionSheet='showActionSheet' product='{{product}}' easyBuy='{{easyBuy}}'></Tabbar>
+</view>
+
+<Chat ecProduct='{{chatData}}' visible='{{chatVisible}}' />
+
+<ActionSheet visible='{{actionSheetVisible}}' page='{{actionSheetPage}}' product='{{product}}' bindhideActionSheet='onHideActionSheet'
+  bindupdate='update'></ActionSheet>
+
+<Auth wx:if='{{authVisible}}'></Auth>
+
+<view class="share-wrapper" wx:if='{{editShare}}'>
+  <view class="share">
+    <input placeholder='{{shareDefaultValue}}' bindinput='handleShareInput' cursor-spacing='10' />
+    <x-button borderless openType='share' type='primary' size='small' bind:click='closeShare'>转发</x-button>
+  </view>
+  <view class="share-mask" bind:tap='closeShare'></view>
+</view>

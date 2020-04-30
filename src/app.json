@@ -1,0 +1,67 @@
+{
+  "pages": [
+    "pages/home/cards/index",
+    "pages/im/index",
+    "pages/map/index",
+    "pages/people/card/index",
+    "pages/people/product/index",
+    "pages/people/productDetail/index",
+    "pages/people/ecProductDetail/index",
+    "pages/people/website/index",
+    "pages/home/info/index",
+    "pages/people/billing/index",
+    "pages/people/selectAddress/index",
+    "pages/people/editAddress/index",
+    "pages/people/order/index",
+    "pages/people/paymentResult/index",
+    "pages/people/cart/index",
+    "pages/timeout/index",
+    "pages/people/post/index",
+    "pages/expired/index"
+  ],
+  "subPackages": [
+    {
+      "root": "extra",
+      "name": "extra",
+      "pages": [
+        "puzzle/index",
+        "app/index"
+      ],
+      "independent": true
+    }
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#9B9B9B",
+    "selectedColor": "#4A8CF2",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/people/card/index",
+        "text": "名片",
+        "iconPath": "/static/card_grey.png",
+        "selectedIconPath": "/static/card_blue.png"
+      },
+      {
+        "pagePath": "pages/people/product/index",
+        "text": "产品",
+        "iconPath": "/static/product_grey.png",
+        "selectedIconPath": "/static/product_blue.png"
+      },
+      {
+        "pagePath": "pages/people/website/index",
+        "text": "官网",
+        "iconPath": "/static/website_grey.png",
+        "selectedIconPath": "/static/website_blue.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 5000
+  }
+}

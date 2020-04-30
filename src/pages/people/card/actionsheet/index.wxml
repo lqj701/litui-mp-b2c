@@ -1,0 +1,17 @@
+<view class="container" wx:if='{{visible}}'>
+  <view class="mask" bindtap='hideActionSheet'></view>
+  <view class="{{ visible ? 'actionsheet actionSheet--up' : 'actionsheet actionSheet--down'}}">
+    <view class="content">
+      <button class="item" open-type='share'>
+        <image class="icon" src='/static/icon/wechat-circle.svg'></image>
+        <view class="text">微信好友</view>
+      </button>
+      <view class="item" bindtap='goPost'>
+        <image class="icon" src='/static/icon/penyouquan-circle.svg'></image>
+        <view class="text">名片海报</view>
+      </view>
+    </view>
+    <view class="spacer" />
+    <view class="action" bindtap='hideActionSheet'>取消</view>
+  </view>
+</view>

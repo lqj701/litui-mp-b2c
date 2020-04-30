@@ -1,0 +1,16 @@
+{
+  "usingComponents": {
+    "Auth": "/components/auth/index",
+    "x-cell": "/mpx/cell/index",
+    "x-modal": "/mpx/modal/index",
+    "x-icon": "/mpx/icon/index",
+    "Hongbao": "/components/hongbao/index",
+    "Information": "./information/index",
+    "Detail": "./detail/index",
+    "Product": "./product/index",
+    "Photo": "./photo/index",
+    "Signature": "./signature/index",
+    "CardInfo": "./cardinfo/index",
+    "ActionSheet": "./actionsheet/index"
+  }
+}

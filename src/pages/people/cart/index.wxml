@@ -1,0 +1,9 @@
+<view class="container">
+  <scroll-view class="scroller" scroll-y>
+    <Products products='{{productsData}}' binddeleteProducts='deleteProducts' bindeditProducts='editProducts' bindselect='onSelectProduct'
+      bindaddCount='addCount' bindminusCount='minusCount'></Products>
+    <ExpiredProducts products='{{expiredProductsData}}' bindclearExpiredProducts='clearExpiredProducts'></ExpiredProducts>
+  </scroll-view>
+  <Tabbar amount='{{amount}}' state='{{tabbarState}}' selectAll='{{selectAll}}' selectProducts='{{selectProducts}}' bindselectAll='selectAll'
+    binddeleteProducts='deleteProducts' bindbilling='billing'></Tabbar>
+</view>

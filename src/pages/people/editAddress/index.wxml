@@ -1,0 +1,24 @@
+<view class='container'>
+  <form class='form'>
+    <view class='block'>
+      <view class='title'>联系人</view>
+      <input class='input' placeholder='姓名' type='text' value='{{consignee}}' maxlength='10' placeholder-class='placeholder' bindinput='onInputConsignee'></input>
+    </view>
+    <view class='block'>
+      <view class='title'>手机号码</view>
+      <input class='input' placeholder='电话' type='number' value='{{phone}}' maxlength='11'  placeholder-class='placeholder' bindinput='onInputPhone'></input>
+    </view>
+    <picker class='block' mode="region" bindchange="onRegionChange" value="{{region}}">
+      <view class='title'>选择地址
+      <view class='placeholder' wx:if='{{!province}}'>省市区</view>
+      <view class='input'>{{province}} {{city}} {{area}}</view>
+      </view>
+    </picker>
+    <view class='block'>
+      <view class='title'>详情地址</view>
+      <input class='input' placeholder='街道门牌信息' value='{{address}}' maxlength='30' placeholder-class='placeholder' bindinput='onInputAddress'></input>
+    </view>
+  </form>
+  <view class='{{saveClassName}}' bindtap='addCustomerAddress' wx:if='{{!isUpdate}}'>保存</view>
+  <view class='{{saveClassName}}' bindtap='updateCustomerAddress' wx:if='{{isUpdate}}'>保存</view>
+</view>

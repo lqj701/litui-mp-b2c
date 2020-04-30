@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "x-image": "/mpx/image/index",
+    "x-icon": "/mpx/icon/index"
+  }
+}

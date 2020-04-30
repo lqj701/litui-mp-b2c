@@ -1,0 +1,8 @@
+<view class='container' wx:if='{{!snapshot}}'>
+  <view class='text'>备注：</view>
+  <input class='input' auto-height value='{{inputValue}}' bindinput='onInput' bindblur='onBlur' maxlength='300' cursor-spacing='20'></input>
+</view>
+
+<view class='container' wx:if='{{snapshot}}'>
+  <view class='text'>备注：{{remark}}</view>
+</view>

@@ -1,0 +1,19 @@
+<view class='container'>
+
+  <view class='detail' wx:if="{{result === 'success'}}">
+    <image class='icon' src='/static/icon/close.svg'></image>
+    <view class='text'>支付成功</view>
+    <view class='amount'>
+      <view class='label'>¥</view>
+      <view class='number'>{{amount}}</view>
+    </view>
+    <view class='button' bindtap='goBilling'>查看订单</view>
+  </view>
+
+  <view class='detail' wx:if="{{result === 'fail'}}">
+    <image class='icon' src='/static/icon/close.svg'></image>
+    <view class='text'>支付失败</view>
+    <view class='button' bindtap='goBilling'>返回订单详情</view>
+  </view>
+
+</view>

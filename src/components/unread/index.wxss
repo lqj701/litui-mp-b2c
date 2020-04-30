@@ -1,0 +1,24 @@
+.unread {
+  position: relative;
+  top: -48rpx;
+  right: 0rpx;
+}
+
+.number {
+  position: absolute;
+  min-width: 32rpx;
+  font-size: 20rpx;
+  line-height: 1.6;
+  padding-left: 8rpx;
+  padding-right: 8rpx;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-radius: 16rpx;
+  background: red;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  transform-origin: center;
+  z-index: 99;
+  box-sizing: border-box;
+}

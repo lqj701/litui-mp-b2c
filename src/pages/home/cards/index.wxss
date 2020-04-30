@@ -1,0 +1,22 @@
+.scroller {
+  width: 750rpx;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.defaultCard {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.25);
+  font-size: 28rpx;
+  margin-top: 30rpx;
+  margin-bottom: -20rpx;
+}
+
+.goInfo {
+  width: 600rpx;
+  height: 100rpx;
+  margin-top: 80rpx;
+}

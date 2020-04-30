@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "该名片已失效",
+  "usingComponents": {
+    "x-image": "/mpx/image/index"
+  }
+}

@@ -1,0 +1,11 @@
+.container {
+  height: 100vh;
+}
+
+.scroller {
+  height: calc(100vh - 94rpx);
+}
+
+.scroller--full {
+  height: 100vh;
+}

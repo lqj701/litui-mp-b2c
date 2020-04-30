@@ -1,0 +1,32 @@
+<view class='container'>
+
+  <scroll-view scroll-y class='window' scroll-into-view='{{scrollIntoMsgId}}' bindscrolltoupper='onScrollToUpper' scroll-with-animation='{{scrollWithAnimation}}'
+    upper-threshold='160'>
+
+    <view class="loading-wrapper" wx:if='{{loading}}'>
+      <view class="loading">
+        <view class="loading-dot"></view>
+        <view class="loading-dot"></view>
+        <view class="loading-dot"></view>
+      </view>
+    </view>
+
+    <view id="msg{{item.id}}" class='massage-wrapper' wx:for='{{historyMessage}}' wx:key='id'>
+
+      <Timebadge time='{{item.time}}' wx:if='{{item.timeVisible}}'></Timebadge>
+
+      <Message data='{{item}}'></Message>
+
+    </view>
+
+  </scroll-view>
+
+  <form class='input' bindsubmit='sendMessage' report-submit='true'>
+
+    <input class='input-view' cursor-spacing='10' value='{{inputMessage}}' bindinput='onInputMessage' confirm-hold></input>
+
+    <button class='input-btn' formType='submit'>发送</button>
+
+  </form>
+
+</view>

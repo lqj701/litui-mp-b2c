@@ -1,0 +1,14 @@
+.scroller {
+  width: 750rpx;
+  height: calc(100vh - 140rpx);
+  margin-top: 140rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.ec .scroller {
+  height: calc(100vh - 80rpx);
+  margin-top: 20rpx;
+}

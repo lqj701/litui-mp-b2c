@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "订单详情",
+  "usingComponents": {
+    "Notice": "./notice/index",
+    "Address": "./address/index",
+    "Tabbar": "./tabbar/index",
+    "Products": "./products/index",
+    "ExpiredProducts": "./expiredProducts/index",
+    "Pay": "./pay/index",
+    "Info": "./info/index",
+    "Remark": "./remark/index"
+  }
+}

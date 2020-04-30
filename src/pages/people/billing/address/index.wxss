@@ -1,0 +1,50 @@
+.container {
+  width: 690rpx;
+  min-height: 112rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  border-top: 1rpx solid #e5e5e5;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+}
+
+.address-text {
+  width: 620rpx;
+  font-size: 34rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.address-wrapper {
+  padding: 30rpx 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.address-people {
+  font-size: 34rpx;
+}
+
+.address-detail {
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 30rpx;
+}
+
+.icon-home {
+  width: 30rpx;
+  height: 40rpx;
+  margin-right: 16rpx;
+}
+
+.icon-right {
+  width: 16rpx;
+  height: 26rpx;
+}

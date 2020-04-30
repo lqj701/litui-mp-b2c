@@ -1,0 +1,6 @@
+<view
+  class="x-cell"
+  style="background: {{background}};width: {{width}};height: {{height}};flex-direction:{{direction}}; align-items:{{alignItems}};justify-content:{{justifyContent}}"
+>
+  <slot></slot>
+</view>

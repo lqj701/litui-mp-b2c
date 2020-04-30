@@ -1,0 +1,69 @@
+<view class="container">
+  <!-- <x-cell width='550rpx' height='calc(100vh - 100rpx)' direction='column' justifyContent='flex-end'>
+    <x-button type='primary' size='small' borderless needFormId openType='getUserInfo' formType='submit' bind:click='onClick'
+      bind:submit='submit' bind:getuserinfo='getuserinfo'>
+      复制所有
+    </x-button>
+    <view>fefef</view>
+  </x-cell> -->
+
+  <view class="block">
+    <view class="title">系统信息</view>
+    <view class="content">
+      <view class="item">手机品牌: {{systemInfo.brand}}</view>
+      <view class="item">手机型号: {{systemInfo.model}}</view>
+      <view class="item">微信版本号: {{systemInfo.version}}</view>
+      <view class="item">客户端基础库版本: {{systemInfo.SDKVersion}}</view>
+      <view class="item">网络类型: {{networkType}}</view>
+    </view>
+  </view>
+
+  <view class="block" bindtap='canIUpdate'>
+    <view class="title">小程序版本</view>
+    <view class="content">
+      <view class="item">小程序appid: {{appId}}</view>
+      <view class="item">是否为最新版：{{!hasUpdate}}</view>
+      <view class="item">当前版本：5.4.3.02</view>
+    </view>
+  </view>
+
+  <view class="block">
+    <view class="title">更新历史</view>
+    <view class="content">
+      <view class="item">版本号：5.4.3.02</view>
+      <view class="item">feat: 企业小程序适配</view>
+      <view class="item">feat: extra拓展包</view>
+    </view>
+    <view class="content">
+      <view class="item">版本号：5.4.2.14</view>
+      <view class="item">feat: 单小程序支持im</view>
+    </view>
+    <view class="content">
+      <view class="item">版本号：5.4.7</view>
+      <view class="item">feat: 单小程序和企业小程序并存</view>
+    </view>
+    <view class="content">
+      <view class="item">版本号：5.3.0</view>
+      <view class="item">refactor: 重构im</view>
+      <view class="item">refactor: 新增全局状态管理，消息订阅</view>
+      <view class="item">feat: 转发海报</view>
+      <view class="item">feat: im推送页面改善</view>
+    </view>
+    <view class="content">
+      <view class="item">版本号：5.2.4</view>
+      <view class="item">fix: 游客进入没有默认名片的小程序，点击查看更多进入官网时需要授权</view>
+      <view class="item">fix: 没有支付成功时也可以发送支付成功的情报</view>
+      <view class="item">refactor: 去除app.json中红包相关页面</view>
+    </view>
+  </view>
+
+  <view class="block">
+    <view class="item">
+      <button bindtap='openDebug'>打开调试</button>
+    </view>
+    <view class="item">
+      <button bindtap='copy'>复制所有</button>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "Unread": "/components/unread/index",
+    "x-image": "/mpx/image/index",
+    "x-icon": "/mpx/icon/index"
+  }
+}

@@ -1,0 +1,10 @@
+<view class='header'>
+  <view class='header-left'>{{title}}</view>
+  <view class='header-right'>
+    <image class='icon' bindtap='goOrder' src='/static/icon/orderList.svg'></image>
+    <image class='icon' bindtap='goCart' src='/static/icon/cart.svg'></image>
+    <button class='icon-wrapper' open-type='share' formType='submit'>
+      <image class='icon' src='/static/icon/ec-share.svg'></image>
+    </button>
+  </view>
+</view>

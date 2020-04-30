@@ -1,0 +1,19 @@
+@import '../theme/variables.wxss';
+.x-image {
+  display: flex;
+  box-sizing: border-box;
+  opacity: 0;
+}
+
+.x-image--show {
+  animation: show .233s ease both;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

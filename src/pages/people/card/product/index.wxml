@@ -1,0 +1,22 @@
+<view class='product' wx:if='{{visible}}'>
+
+  <text class='header'>主推产品</text>
+
+  <view class='card' bindtap='goto'>
+
+    <view class='card-cover'>
+      <x-image class='image' src='{{product.image}}' wx:if='{{product.image}}' mode='aspectFill' width="750rpx" height="562.5rpx" />
+      <view class='ui-triangle-down'></view>
+      <view class='card-cover-layer'>
+        <text class='card-cover-layer-name'>{{product.name}}</text>
+        <text class='card-cover-layer-price'>{{product.price}}</text>
+      </view>
+    </view>
+
+    <view class='card-content'>
+      <text class='card-content-text' space='nbsp'>{{product.introduce}}</text>
+    </view>
+
+  </view>
+
+</view>

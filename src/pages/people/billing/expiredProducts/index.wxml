@@ -1,0 +1,26 @@
+<view class="container" wx:if='{{visible}}'>
+  <view class="topbar">
+    <view class="left">以下商品暂时无法购买</view>
+  </view>
+  <view class="list">
+    <view class="item" wx:for='{{products}}' wx:key='{{item.id}}' data-productid="{{item.ecProductId}}" bindtap='goto'>
+      <view class="top">
+        <view class="icon expired">失效</view>
+        <image class="cover" src='{{item.ecGoodsImage}}'></image>
+        <view class="detail">
+          <view class="info">
+            <view class="name">{{item.ecProductName}}</view>
+            <view class="value">{{item.value}}</view>
+          </view>
+          <view class="data">
+            <view class="price">¥{{item.price}}</view>
+            <view class="count">X{{item.count}}</view>
+          </view>
+        </view>
+      </view>
+      <view class="bottom">
+        {{item.goodsStatus}}
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,5 @@
+<view class="unread" hidden='{{hidden}}'>
+
+  <view class="number">{{unread}}</view>
+
+</view>

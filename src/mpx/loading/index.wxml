@@ -1,0 +1,14 @@
+<view class="x-loading">
+  <view class="x-loading1 x-loading-child"></view>
+  <view class="x-loading2 x-loading-child"></view>
+  <view class="x-loading3 x-loading-child"></view>
+  <view class="x-loading4 x-loading-child"></view>
+  <view class="x-loading5 x-loading-child"></view>
+  <view class="x-loading6 x-loading-child"></view>
+  <view class="x-loading7 x-loading-child"></view>
+  <view class="x-loading8 x-loading-child"></view>
+  <view class="x-loading9 x-loading-child"></view>
+  <view class="x-loading10 x-loading-child"></view>
+  <view class="x-loading11 x-loading-child"></view>
+  <view class="x-loading12 x-loading-child"></view>
+</view>

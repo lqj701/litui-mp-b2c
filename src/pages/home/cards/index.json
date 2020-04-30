@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "Notfound": "/components/notfound/index",
+    "Tabbar": "/components/tabbar/index",
+    "x-cell": "/mpx/cell/index",
+    "x-button": "/mpx/button/index",
+    "Card": "./card/index"
+  }
+}

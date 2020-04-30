@@ -1,0 +1,33 @@
+.overlay {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  animation: fade-in .3s ease;
+}
+
+.modal {
+  position: fixed;
+  z-index: 11;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  min-width: 500rpx;
+  padding: 40rpx;
+  background: rgb(255, 255, 255);
+  border-radius: 8rpx;
+  box-shadow: 0 0 60rpx rgba(0, 0, 0, 0.25);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,83 @@
+.container {
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  right: 0rpx;
+  height: 90rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.a .left {
+  width: 500rpx;
+  flex: 1;
+  padding-left: 30rpx;
+  display: flex;
+  align-items: center;
+  font-size: 34rpx;
+  background: #fff;
+}
+
+.a .left-amount {
+  color: #ff4b4f;
+  margin-left: 8rpx;
+}
+
+.a .right {
+  width: 250rpx;
+  font-size: 36rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.a .right-button {
+  background: #4a8cf2;
+  width: 250rpx;
+  border-radius: 0;
+  color: #fff;
+}
+
+.a .right-button::after {
+  border: 0;
+}
+
+.b .cancel {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250rpx;
+  font-size: 36rpx;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.payment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 750rpx;
+  background: #4a8cf2;
+  font-size: 36rpx;
+  color: #fff;
+  border-radius: 0;
+}
+
+.payment::after {
+  border: 0;
+  border-radius: 0;
+}
+
+.c .contact {
+  width: 750rpx;
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  right: 0rpx;
+  height: 90rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #4a8cf2;
+  color: #fff;
+}

@@ -1,0 +1,116 @@
+.tabbar {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 750rpx;
+  height: 90rpx;
+  display: flex;
+}
+
+.tabbar-left {
+  height: 90rpx;
+  flex: 1;
+  max-width: 360rpx;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tabbar-left form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabbar-left-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabbar-left-item button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0;
+  background: #fff;
+}
+
+.tabbar-left-item button::after {
+  border: 0;
+}
+
+.tabbar-left-item:nth-child(2) .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32rpx;
+}
+
+.tabbar-left-item .icon {
+  width: 36rpx;
+  height: 36rpx;
+  margin-bottom: 3rpx;
+}
+
+.tabbar-left-item .text {
+  font-size: 22rpx;
+  color: #777777;
+}
+
+.tabbar-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabbar-right form {
+  width: 100%;
+}
+
+.tabbar-right-item {
+  width: 242rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(74, 141, 242);
+}
+
+.tabbar-right-item:nth-child(1) {
+  background: rgba(74, 141, 242, 0.8);
+}
+
+.tabbar-right-item form {
+  width: 100%;
+}
+
+.tabbar-right-item--close {
+  width: 500rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.30);
+  border-radius: 0;
+}
+
+.tabbar-right-item-contact {
+  background: rgb(74, 141, 242);
+}
+
+.tabbar-right-item--close::after {
+  border: 0;
+}
+
+.tabbar-right-text {
+  font-size: 36rpx;
+  color: #fff;
+}

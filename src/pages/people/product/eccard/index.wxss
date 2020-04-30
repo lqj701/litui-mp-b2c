@@ -1,0 +1,26 @@
+.card-wrapper {
+  width: 690rpx;
+  margin: auto;
+  margin-bottom: 30rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  box-shadow: 0rpx 2rpx 5rpx 0rpx rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  border-radius: 8rpx;
+  overflow: hidden;
+}
+
+.card-info {
+  padding: 20rpx;
+}
+
+.card-title {
+  color: #000;
+  font-size: 34rpx;
+}
+
+.card-price {
+  color: #ff4b4f;
+}

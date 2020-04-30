@@ -1,0 +1,32 @@
+<view class='{{actionSheetClassName}}'>
+  <view class='{{actionSheetMaskClassName}}' bindtap='hideActionSheet'></view>
+  <view class='{{actionSheetWrapperClassName}}'>
+    <image class='close' src='/static/icon/close.svg' bindtap='hideActionSheet'></image>
+    <view class='cover'>
+      <x-image class='cover-image' src='{{selectGoodsCover}}' width='200rpx' height='200rpx' />
+      <view class='cover-info'>
+        <view class='cover-title'>{{selectGoodsName}}</view>
+        <view class='cover-price'>¥{{selectGoodsPrice}}</view>
+      </view>
+    </view>
+    <view class="spec">
+      <view class="spec-title">商品规格：</view>
+      <view class="spec-items">
+        <view class="{{item.remainNum > 0 ? ( item.active ? 'spec-item spec-item--active' : 'spec-item') : 'spec-item spec-item--close'}}"
+          wx:for='{{product.ecGoodsList}}' wx:key="{{item.ecGoodsId}}" data-id="{{item.ecGoodsId}}" bindtap='selectValue'>
+          {{item.value}}
+        </view>
+      </view>
+    </view>
+    <view class='select'>
+      <view class="select-left">
+        <view class='select-title'>购买数量：</view>
+        <view class="select-remain">(库存：{{selectValueRemainNum}}件)</view>
+      </view>
+      <view class='select-count'>
+        <Count count='{{count}}' bindaddCount='addCount' bindminusCount='minusCount'></Count>
+      </view>
+    </view>
+    <view class='confirm' bindtap='confirm'>确 认</view>
+  </view>
+</view>

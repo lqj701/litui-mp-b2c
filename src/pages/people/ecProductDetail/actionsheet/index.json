@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "Count": "../count/index",
+    "x-image": "/mpx/image/index"
+  }
+}

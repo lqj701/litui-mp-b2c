@@ -1,0 +1,13 @@
+<view class="game">
+  <puzzle-main
+    status='{{status}}'
+    score='{{score}}'
+    bind:finished='finished'
+  ></puzzle-main>
+
+  <puzzle-menu
+    status='{{status}}'
+    score='{{score}}'
+    bind:start='start'
+  ></puzzle-menu>
+</view>

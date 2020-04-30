@@ -1,0 +1,13 @@
+<x-cell wx:if='{{visible}}'>
+
+  <view class='header'>图片展示</view>
+
+  <x-image
+    src='{{item}}'
+    wx:for='{{photo}}'
+    wx:key='id'
+    mode='widthFix'
+    width="750rpx"
+  />
+
+</x-cell>

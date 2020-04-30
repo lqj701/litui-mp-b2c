@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "Topbar": "/components/topbar/index",
+    "Echeader": "./echeader/index",
+    "Notfound": "/components/notfound/index",
+    "Card": "./card/index",
+    "EcCard": "./eccard/index",
+    "Auth": "/components/auth/index",
+    "x-cell": "/mpx/cell/index"
+  }
+}

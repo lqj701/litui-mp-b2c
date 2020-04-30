@@ -1,0 +1,20 @@
+<view
+  class='container'
+  wx:if='{{visible}}'
+>
+
+  <x-image
+    class='image'
+    src='{{data.image}}'
+    preview
+    mode='widthFix'
+    wx:if='{{data.image}}'
+    width='750rpx'
+  />
+
+  <view class='description'>
+    <text class='description-name'>{{data.name}}</text>
+    <text class='description-text'>{{data.introduce}}</text>
+  </view>
+
+</view>

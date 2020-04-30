@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "Message": "./message/index",
+    "Timebadge": "./timebadge/index"
+  },
+  "navigationBarTitleText": "聊天"
+}

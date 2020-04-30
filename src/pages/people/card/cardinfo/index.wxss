@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 140rpx;
+  font-size: 28rpx;
+  color: rgba(0, 0, 0, 0.45);
+  background-color: #fff;
+}
+
+.item {
+  width: 250rpx;
+  height: 140rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  height: 140rpx;
+  background: #fff;
+  font-size: 28rpx;
+  color: rgba(0, 0, 0, 0.45);
+  line-height: 38rpx;
+  border-radius: 0;
+}
+
+.button::after {
+  border: 0;
+}
+
+.item-icon {
+  margin-bottom: 20rpx;
+}
+
+.space-line {
+  width: 690rpx;
+  height: 1rpx;
+  background: #e5e5e5;
+}

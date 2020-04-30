@@ -1,0 +1,36 @@
+.container {
+    width: 750rpx;
+    height: 100vh;
+}
+
+.post-wrapper {
+    box-shadow: 0 0 12rpx 0 rgba(0, 0, 0, 0.08);
+    margin-bottom: 100rpx;
+    margin-top: 40rpx;
+}
+
+.post {
+    width: 670rpx;
+    height: 940rpx;
+}
+
+.save {
+    width: 670rpx;
+    height: 90rpx;
+    background: #4A8CF2;
+    border: 2rpx solid rgba(5, 5, 5, 0.08);
+    border-radius: 10rpx;
+    font-size: 36rpx;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    border: 0;
+}
+
+button::after {
+    border: 0;
+}

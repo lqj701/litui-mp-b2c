@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "Topbar": "/components/topbar/index",
+    "Notfound": "/components/notfound/index",
+    "Information": "./information/index",
+    "MyBlock": "./myBlock/index",
+    "Copyright": "./copyright/index",
+    "Auth": "/components/auth/index"
+  }
+}

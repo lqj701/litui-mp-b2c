@@ -1,0 +1,49 @@
+@import '../theme/variables.wxss';
+.x-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30rpx;
+  border: 2rpx solid #ddd;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.x-button--loading {
+  opacity: 0.6;
+}
+
+.x-button-loading {
+  margin-right: 20rpx;
+}
+
+.x-button--borderless {
+  border: 0;
+}
+
+.x-button--borderless::after {
+  border: 0;
+}
+
+.x-button--default {
+  color: #000;
+  background: #fff;
+}
+
+.x-button--primary {
+  color: #fff;
+  background: var(--btn-primary-color);
+}
+
+.x-button--normal {
+  font-size: 36rpx;
+}
+
+.x-button--small {
+  font-size: 26rpx;
+}
+
+.x-button--disabled {
+  color: #fff;
+  background: var(--btn-disabled-color);
+}

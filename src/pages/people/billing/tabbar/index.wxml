@@ -1,0 +1,22 @@
+<view class="container" wx:if='{{visible}}'>
+  <view class='container a' wx:if='{{!state.isExistOrder}}'>
+    <view class='left'>实付金额：
+      <view class='left-amount'>¥{{amount}}</view>
+    </view>
+    <form class="right" bindsubmit='formSubmit' report-submit='true' wx:if='{{hasBindPhone}}'>
+      <button class="right-button" formType='submit' bindtap='createEcOrder'>提交订单</button>
+    </form>
+    <form class="right" bindsubmit='formSubmit' report-submit='true' wx:if='{{!hasBindPhone}}'>
+      <button class="right-button" formType='submit' open-type="getPhoneNumber" bindgetphonenumber='getPhoneNumber'>提交订单</button>
+    </form>
+  </view>
+
+  <form bindsubmit='formSubmit' report-submit='true'>
+    <button class='payment' formType='submit' bindtap='makePayment' wx:if='{{state.isExistOrder && !state.isClosedOrder}}'>立即支付</button>
+    <!-- <view class='cancel' bindtap='cancel'>取消订单</view> -->
+  </form>
+
+  <view class='container c' wx:if='{{state.isExistOrder && state.isClosedOrder}}' bindtap='contact'>
+    <view class='contact'>咨询</view>
+  </view>
+</view>

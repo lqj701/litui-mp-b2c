@@ -1,0 +1,66 @@
+.container {
+  width: 690rpx;
+  padding: 0 30rpx;
+  background: #fff;
+  margin-bottom: 30rpx;
+}
+
+.address {
+  padding: 30rpx 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+
+.address-customer {
+  font-size: 34rpx;
+  margin-bottom: 16rpx;
+}
+
+.address-detail {
+  font-size: 30rpx;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.action {
+  padding: 24rpx 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.action-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.action-left--active {
+  color: #4a8cf2;
+}
+
+.action-left-icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 16rpx;
+}
+
+.action-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.action-right-item {
+  margin-left: 43rpx;
+  display: flex;
+  align-items: center;
+}
+
+.action-right-icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 16rpx;
+}

@@ -1,0 +1,32 @@
+.container {
+  margin-bottom: 30rpx;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30rpx;
+  font-size: 34rpx;
+  font-weight: 500;
+  color: #2d3034;
+  background-color: #fff;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  left: 30rpx;
+  right: 30rpx;
+  bottom: 0;
+  height: 2rpx;
+  background: #e5e5e5;
+}
+
+.content {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30rpx;
+  font-size: 30rpx;
+  color: rgba(0, 0, 0, 0.85);
+}

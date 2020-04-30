@@ -1,0 +1,58 @@
+<view class='container'>
+
+  <image class='background' src='/static/image/card_background@2x.png' lazy-load />
+
+  <view class='left'>
+    <x-image class='left-avatar' src='{{information.avatar}}' preview width="240rpx" height="240rpx" radius='5rpx' />
+  </view>
+
+  <view class='center'>
+    <view class='center-name'>{{information.name}}</view>
+    <view class='center-title'>{{information.position}}</view>
+    <view class='center-company'>{{information.company}}</view>
+  </view>
+
+  <view class='right' wx:if='{{IM_ENABLE}}'>
+    <form bindsubmit='share' report-submit>
+      <button class='right-btn' formType='submit'>
+        <image class='right-icon share' src='/static/icon/share-active.svg' lazy-load></image>
+      </button>
+    </form>
+    <form bindsubmit='im' wx:if='{{phoneAuthState}}' bindtap='goto' report-submit>
+      <button class='right-btn' formType='submit'>
+        <image class='right-icon wechat' src='/static/icon/wechat-active.svg' lazy-load></image>
+        <Unread></Unread>
+      </button>
+    </form>
+    <form bindsubmit='im' wx:if='{{!phoneAuthState}}' report-submit>
+      <button class='right-btn' open-type='getPhoneNumber' bindgetphonenumber='getPhoneNumber' formType='submit'>
+        <image class='right-icon wechat' src='/static/icon/wechat-active.svg' lazy-load></image>
+        <Unread></Unread>
+      </button>
+    </form>
+  </view>
+
+  <view class='right' wx:if='{{!IM_ENABLE}}'>
+    <form bindsubmit='share' report-submit>
+      <button class='right-btn' formType='submit'>
+        <image class='right-icon share' src='/static/icon/share-active.svg' lazy-load></image>
+      </button>
+    </form>
+    <form bindsubmit='im' wx:if='{{appType === 1 && phoneAuthState}}' bindtap='goto' report-submit>
+      <button class='right-btn' formType='submit'>
+        <image class='right-icon wechat' src='/static/icon/wechat-active.svg' lazy-load></image>
+        <Unread></Unread>
+      </button>
+    </form>
+    <form bindsubmit='im' wx:if='{{appType === 1 && !phoneAuthState}}' report-submit>
+      <button class='right-btn' open-type='getPhoneNumber' bindgetphonenumber='getPhoneNumber' formType='submit'>
+        <image class='right-icon wechat' src='/static/icon/wechat-active.svg' lazy-load></image>
+        <Unread></Unread>
+      </button>
+    </form>
+    <view class="right-btn" wx:if='{{appType === 0}}' bindtap='showContactModal'>
+      <image class='right-icon' src='/static/icon/wechat-active.svg' lazy-load></image>
+    </view>
+  </view>
+
+</view>

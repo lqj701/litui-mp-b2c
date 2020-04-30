@@ -1,0 +1,6 @@
+<image
+  class="x-icon"
+  style='width:{{size}};height:{{size}}'
+  src='{{src}}'
+  lazy-load
+/>

@@ -1,0 +1,21 @@
+.container {
+  width: 750rpx;
+  padding: 24rpx 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #fff;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.item {
+  font-size: 28rpx;
+  color: #666;
+  padding: 0rpx 30rpx;
+}
+
+.item:nth-child(1),
+.item:nth-child(2) {
+  margin-bottom: 16rpx;
+}

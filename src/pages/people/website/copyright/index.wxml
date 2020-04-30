@@ -1,0 +1,14 @@
+<view class='container'>
+
+  <view class='line'></view>
+
+  <view class='content'>由
+    <view
+      class='content--highlight'
+      bind:longpress='extra'
+    >励推</view>提供技术支持
+  </view>
+
+  <view class='line'></view>
+
+</view>

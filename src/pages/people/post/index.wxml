@@ -1,0 +1,7 @@
+<view class="container">
+  <view class="post-wrapper">
+    <canvas class="post" canvas-id="post"></canvas>
+  </view>
+  <view class='save' wx:if='{{hasWritePhotosAlbumAuth}}' bindtap='save'>保存名片海报</view>
+  <button class='save' wx:if='{{!hasWritePhotosAlbumAuth}}' open-type="openSetting" bindopensetting='settingResult'>保存名片海报</button>
+</view>

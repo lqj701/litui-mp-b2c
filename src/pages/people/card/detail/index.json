@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "x-list": "/mpx/list/index"
+  }
+}

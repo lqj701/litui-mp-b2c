@@ -1,0 +1,46 @@
+<view class='card'>
+  <view
+    class='content'
+    bindtap='readCard'
+  >
+    <x-image
+      class='mask'
+      src='/static/image/cardbg.png'
+      width='670rpx'
+      height='320rpx'
+    />
+    <view class='content-wrapper'>
+      <view class='content-info-wrapper'>
+        <view class='content-name'>{{card.name}}</view>
+        <view class='content-title'>{{card.position}}</view>
+        <view class='content-phone'>{{card.phone}}</view>
+      </view>
+      <view class='content-company'>{{card.company}}</view>
+    </view>
+    <x-image
+      class='content-avatar'
+      width='100rpx'
+      height='100rpx'
+      src='{{card.avatar}}'
+      radius='4rpx'
+    />
+  </view>
+  <view
+    class="content-mask"
+    wx:if='{{!card.isValid && maskVisible }}'
+  >该名片已失效</view>
+  <view class='info'>
+    <view
+      class='info-share'
+      hidden='{{!card.getWay}}'
+    >{{card.getDate}} {{card.getWay}}</view>
+    <view
+      class='info-message'
+      hidden='{{!card.unread}}'
+    >{{card.unread}} 条未读消息</view>
+  </view>
+  <view
+    class='info'
+    hidden='{{!card.source}}'
+  >{{card.source}}推荐</view>
+</view>

@@ -1,0 +1,15 @@
+<view
+  class='card-wrapper'
+  bindtap='goto'
+>
+  <x-image
+    class='card-image'
+    src='{{data.showImages[0]}}'
+    width='690rpx'
+    height='690rpx'
+  />
+  <view class='card-info'>
+    <view class='card-title'>{{data.name}}</view>
+    <view class='card-price'>¥{{data.minPrice}}</view>
+  </view>
+</view>

@@ -1,0 +1,11 @@
+.website {
+  margin-top: 140rpx;
+  min-height: calc(100vh - 140rpx);
+  background-color: rgb(239, 239, 244);
+}
+
+.website--full {
+  margin-top: 0rpx;
+  min-height: 100vh;
+  background-color: rgb(239, 239, 244);
+}

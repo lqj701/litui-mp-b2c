@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="left">
+    <view class="selectAll" bindtap='selectAll'>
+      <image class="icon" src='/static/icon/select.svg' wx:if="{{!selectAll}}"></image>
+      <image class="icon" src='/static/icon/select-active.svg' wx:if="{{selectAll}}"></image>
+      <view class="text">全选</view>
+    </view>
+    <view class="amount" wx:if="{{state === 'billing'}}">合计：
+      <view class="price">¥{{amount}}</view>
+    </view>
+  </view>
+  <view class="right">
+    <view class="{{billingClassName}}" wx:if="{{state === 'billing'}}" bindtap='billing'>结算</view>
+    <view class="{{editClassName}}" wx:if="{{state === 'edit'}}" bindtap='deleteProducts'>删除所选</view>
+  </view>
+</view>

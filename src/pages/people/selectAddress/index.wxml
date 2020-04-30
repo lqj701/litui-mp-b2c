@@ -1,0 +1,9 @@
+<view class='container'>
+  <Notfound wx:if='{{isNull}}' text='还没有添加收货地址哦' image='/static/icon/noaddress@2x.png'></Notfound>
+  <scroll-view class='scroller' scroll-y wx:if='{{!isNull}}'>
+    <view class='address-wrapper' wx:for='{{address}}' wx:key='{{item}}'>
+      <Card address='{{item}}' bindsetDefault='setDefault' bindeditAddress='editAddress' binddeleteAddress='deleteAddress' bindselectAddress='selectAddress'></Card>
+    </view>
+  </scroll-view>
+  <view class='add' bindtap='addAddress'>新增收货地址</view>
+</view>

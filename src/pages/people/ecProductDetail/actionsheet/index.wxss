@@ -1,0 +1,216 @@
+.actionSheet {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.actionSheet--hide {
+  overflow: hidden;
+  animation: hide 0s ease 0.2s 1 normal;
+  animation-fill-mode: forwards;
+}
+
+.actionSheet-mask {
+  position: absolute;
+  z-index: 1;
+  width: 750rpx;
+  height: 100vh;
+}
+
+.actionSheet-mask--fadeIn {
+  animation: fadeIn 0.1s ease 0s 1 normal;
+  animation-fill-mode: forwards;
+}
+
+.actionSheet-mask--fadeOut {
+  animation: fadeOut 0.1s ease 0s 1 normal;
+  animation-fill-mode: forwards;
+}
+
+.close {
+  position: absolute;
+  right: 24rpx;
+  top: 24rpx;
+  width: 42rpx;
+  height: 42rpx;
+}
+
+.actionSheet-wrapper {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 750rpx;
+  background: #fff;
+}
+
+.actionSheet-wrapper--fold {
+  animation: fold 0.2s ease 0s 1 normal;
+  animation-fill-mode: forwards;
+}
+
+.actionSheet-wrapper--unfold {
+  animation: unfold 0.2s ease 0s 1 normal;
+  animation-fill-mode: forwards;
+}
+
+.cover {
+  padding: 60rpx 30rpx 40rpx 30rpx;
+  display: flex;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+
+.cover-image {
+  margin-right: 30rpx;
+  border-radius: 8rpx;
+}
+
+.cover-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cover-title {
+  font-size: 34rpx;
+}
+
+.cover-price {
+  font-size: 40rpx;
+  color: #ff4b4f;
+}
+
+.spec {
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+
+.spec-title {
+  color: rgba(0, 0, 0, 0.85);
+  margin-bottom: 16rpx;
+  font-size: 30rpx;
+}
+
+.spec-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.spec-item {
+  min-width: 100rpx;
+  padding: 10rpx 8rpx;
+  background: #F4F4F4;
+  font-size: 28rpx;
+  border-radius: 4rpx;
+  margin-right: 16rpx;
+  color: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16rpx;
+}
+
+.spec-item--close {
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.spec-item--active {
+  background: #4A8CF2;
+  color: #fff;
+}
+
+.select {
+  display: flex;
+  justify-content: space-between;
+  height: 209rpx;
+}
+
+.select-left {
+  margin-top: 49rpx;
+  margin-left: 30rpx;
+}
+
+.select-title {
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 30rpx;
+}
+
+.select-remain {
+  font-size: 24rpx;
+  color: #999999;
+}
+
+.select-count {
+  margin-top: 40rpx;
+  margin-right: 30rpx;
+}
+
+.confirm {
+  width: 750rpx;
+  height: 94rpx;
+  background: #4a8cf2;
+  font-size: 36rpx;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes hide {
+  from {
+    height: 100vh;
+    transform: translateY(0)
+  }
+  to {
+    height: 0;
+    transform: translateY(100vh)
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    background: rgba(0, 0, 0, 0);
+  }
+  to {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  to {
+    opacity: 0;
+    background: rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes fold {
+  from {
+    opacity: 1;
+    bottom: 0;
+  }
+  to {
+    opacity: 0;
+    bottom: -500rpx;
+  }
+}
+
+@keyframes unfold {
+  from {
+    opacity: 0;
+    bottom: -500rpx;
+  }
+  to {
+    opacity: 1;
+    bottom: 0;
+  }
+}

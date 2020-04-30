@@ -1,0 +1,4 @@
+<view class="overlay" wx:if='{{visible}}' />
+<view class="modal" wx:if='{{visible}}'>
+  <slot />
+</view>

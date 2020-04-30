@@ -1,0 +1,16 @@
+.container {
+  width: 690rpx;
+  font-size: 34rpx;
+  background: #fff;
+  margin-top: 30rpx;
+  padding: 20rpx 30rpx;
+  display: flex;
+}
+
+.text{
+  margin-right: 20rpx;
+}
+
+.input{
+  width: 560rpx;
+}

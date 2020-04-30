@@ -1,0 +1,5 @@
+<view class='container' wx:if='{{snapshot}}'>
+  <view class='item'>订单编号：{{ecOrderId}}</view>
+  <view class='item' wx:if='{{createdTime}}'>下单时间：{{createdTime}}</view>
+  <view class='item' wx:if='{{paidTime}}'>支付时间：{{paidTime}}</view>
+</view>

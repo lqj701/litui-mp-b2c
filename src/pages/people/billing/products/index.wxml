@@ -1,0 +1,27 @@
+<view class='container' wx:if='{{hasProduct}}'>
+  <view class='items' wx:for='{{products}}' wx:key='item' data-id='{{item.ecProductId}}' bindtap='goto'>
+    <image class='item-cover' src='{{item.ecGoodsImage}}'></image>
+    <view class="info" data-ecproductid="{{item.ecProductId}}" bindtap='gotoProduct'>
+      <view class="name">{{item.ecProductName}}</view>
+      <view class="value">{{item.value}}</view>
+      <view class="info-block">
+        <view class="price">¥{{item.price}}</view>
+        <view class="count">X{{item.count}}</view>
+      </view>
+    </view>
+  </view>
+  <view class='amount'>
+    <view>合计：</view>
+    <view class='amount-number'>¥{{amount}}</view>
+  </view>
+  <view class='actualMoney' wx:if='{{snapshot}}'>
+    <view>实付金额：</view>
+    <view class='actualMoney-number'>¥{{order.actualMoney}}</view>
+  </view>
+</view>
+
+<view class='noproduct' wx:if='{{!hasProduct}}'>
+  <image class="icon" src='/static/image/noproduct@2x.png'></image>
+  <view class="text">当前没有购买的商品，请重新选择商品</view>
+  <view class="button" bindtap="goCart">重新选择</view>
+</view>

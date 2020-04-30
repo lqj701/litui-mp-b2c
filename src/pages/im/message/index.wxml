@@ -1,0 +1,14 @@
+<view class='container' wx:if='{{visible}}'>
+
+  <open-data wx:if='{{isCustomer}}' class='avatar pull-right' type='userAvatarUrl'></open-data>
+  <image wx:if='{{!isCustomer}}' class='avatar' src='{{data.avatar}}'></image>
+
+  <view class='{{contentClass}}' bind:longpress='copy'>
+    {{data.message}}
+    <view class='ui-triangle-right' wx:if='{{isCustomer}}'></view>
+    <view class='ui-triangle-right-mask' wx:if='{{isCustomer}}'></view>
+    <view class='ui-triangle-left' wx:if='{{!isCustomer}}'></view>
+    <view class='ui-triangle-left-mask' wx:if='{{!isCustomer}}'></view>
+  </view>
+
+</view>

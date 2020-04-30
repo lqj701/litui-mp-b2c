@@ -1,0 +1,28 @@
+<view class='container' bindtap='goto' wx:if='{{!hasDefaultAddress && !snapshot}}'>
+  <view class='address'>
+    <image class='icon icon-home' src='/static/icon/home.svg'></image>
+    <view class='address-text'>还没有收货地址，立即添加</view>
+  </view>
+  <image class='icon icon-right' src='/static/icon/right.svg'></image>
+</view>
+
+<view class='container' bindtap='goto' wx:if='{{hasDefaultAddress && !snapshot}}'>
+  <view class='address'>
+    <image class='icon icon-home' src='/static/icon/home.svg'></image>
+    <view class='address-wrapper'>
+      <view class='address-people'>{{address.consignee}}，{{address.phone}}</view>
+      <view class='address-detail'>{{address.province}}{{address.city}}{{address.area}}{{address.address}}</view>
+    </view>
+  </view>
+  <image class='icon icon-right' src='/static/icon/right.svg'></image>
+</view>
+
+<view class='container' wx:if='{{snapshot}}'>
+  <view class='address'>
+    <image class='icon icon-home' src='/static/icon/home.svg'></image>
+    <view class='address-wrapper'>
+      <view class='address-people'>{{address.consignee}}，{{address.phone}}</view>
+      <view class='address-detail'>{{address.province}}{{address.city}}{{address.area}}{{address.address}}</view>
+    </view>
+  </view>
+</view>

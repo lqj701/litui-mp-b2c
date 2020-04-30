@@ -1,0 +1,24 @@
+.container{
+  height: 100vh;
+}
+
+.scroller{
+  width: 750rpx;
+  height: calc(100vh - 94rpx);
+}
+
+.add {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 750rpx;
+  height: 94rpx;
+  font-size: 36rpx;
+  color: #fff;
+  background: #4a8cf2;
+}

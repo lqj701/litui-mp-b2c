@@ -1,0 +1,88 @@
+<view class='topbar'>
+
+  <view class='topbar-info'>
+    <x-image class='topbar-info-avatar' src='{{data.avatar}}' width='100rpx' height='100rpx' radius='5rpx' />
+    <view class='topbar-info-content'>
+      <view class='name'>{{data.name}}</view>
+      <view class='title'>{{data.position}}</view>
+    </view>
+  </view>
+
+  <view class='topbar-button'>
+
+    <button class='topbar-button-detail' data-value='card' bindtap='goto'>
+      <image class='icon' src='/static/icon/card-light.svg' /> 名片
+    </button>
+
+    <block wx:if='{{IM_ENABLE}}'>
+
+      <view class='btn-wrapper' wx:if='{{(authVisible)}}'>
+        <form bindsubmit='formSubmit' report-submit='true'>
+          <button class='topbar-button-contact' open-type='getPhoneNumber' bindgetphonenumber='getPhoneNumber' formType='submit'>
+            <image class='icon' src='/static/icon/wechat-light.svg' />
+            <text class='text'>咨询</text>
+            <Unread></Unread>
+          </button>
+        </form>
+      </view>
+
+      <view class='btn-wrapper' wx:if='{{!authVisible}}'>
+        <form bindsubmit='formSubmit' report-submit='true'>
+          <button class='topbar-button-contact' bindtap='goto' formType='submit'>
+            <image class='icon' src='/static/icon/wechat-light.svg' />
+            <text class='text'>咨询</text>
+            <Unread></Unread>
+          </button>
+        </form>
+      </view>
+
+    </block>
+
+    <block wx:if='{{!IM_ENABLE}}'>
+
+      <view class='btn-wrapper' wx:if='{{appType === 1 && authVisible}}'>
+        <form bindsubmit='formSubmit' report-submit='true'>
+          <button class='topbar-button-contact' open-type='getPhoneNumber' bindgetphonenumber='getPhoneNumber' formType='submit'>
+            <image class='icon' src='/static/icon/wechat-light.svg' />
+            <text class='text'>咨询</text>
+            <Unread></Unread>
+          </button>
+        </form>
+      </view>
+
+      <view class='btn-wrapper' wx:if='{{appType === 1 && !authVisible}}'>
+        <form bindsubmit='formSubmit' report-submit='true'>
+          <button class='topbar-button-contact' bindtap='goto' formType='submit'>
+            <image class='icon' src='/static/icon/wechat-light.svg' />
+            <text class='text'>咨询</text>
+            <Unread></Unread>
+          </button>
+        </form>
+      </view>
+
+      <view class='btn-wrapper' wx:if='{{appType === 0}}'>
+        <button class='topbar-button-contact' bindtap='showContactModal'>
+          <image class='icon' src='/static/icon/wechat-light.svg' />
+          <text class='text'>咨询</text>
+        </button>
+      </view>
+
+    </block>
+
+  </view>
+
+</view>
+
+<x-modal visible='{{contactModalVisible}}'>
+  <view class="contactModalContent">
+    <image class="closeContactModal" src='/static/icon/close.svg' bindtap='closeContactModal' lazy-load />
+    <image class="avatar" src='{{salerAvatar}}' />
+    <view class="contact" bindtap='makePhoneCall' bindtap='makePhoneCall'>直接电话咨询</view>
+    <button class='getPhoneNumber' bindtap='hasPhoneNumber' wx:if='{{!authVisible}}'>
+      留下电话，专属客服与您沟通
+    </button>
+    <button class='getPhoneNumber' open-type='getPhoneNumber' bindgetphonenumber='getPhoneNumberAnother' wx:if='{{authVisible}}'>
+      留下电话，专属客服与您沟通
+    </button>
+  </view>
+</x-modal>

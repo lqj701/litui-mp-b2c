@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "Notfound": "/components/notfound/index",
+    "Echeader": "./echeader/index",
+    "Auth": "/components/auth/index",
+    "Chat": "./chat/index",
+    "Cover": "./cover/index",
+    "Introduce": "./introduce/index",
+    "Tabbar": "./tabbar/index",
+    "ActionSheet": "./actionsheet/index",
+    "x-button": "/mpx/button/index"
+  }
+}

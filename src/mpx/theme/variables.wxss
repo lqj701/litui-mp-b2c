@@ -1,0 +1,58 @@
+  page {
+    /* 全局颜色变量 */
+    --font-dark-color: rgba(0, 0, 0, 0.850);
+    --font-grey-color: rgba(0, 0, 0, 0.450);
+    --font-light-color: #ffffff;
+    --btn-default-color: #ffffff;
+    --btn-primary-color: #4a8cf2;
+    --btn-disabled-color: rgba(0, 0, 0, 0.30);
+    /* The Color of O2Team Brand */
+    --color-brand: #6190E8;
+    --color-brand-light: #78A4F4;
+    --color-brand-dark: #346FC2;
+    /* Color */
+    --color-success: #13CE66;
+    --color-error: #FF4949;
+    --color-warning: #FFC82C;
+    --color-info: #78A4FA;
+    /* Color Palette */
+    --color-black-a: #000;
+    --color-black-b: #333;
+    --color-black-c: #7F7F7F;
+    --color-black-d: #B2B2B2;
+    --color-grey-a: #333;
+    --color-grey-b: #666;
+    --color-grey-c: #999;
+    --color-grey-d: #CCC;
+    --color-grey-e: #E5E5E5;
+    --color-grey-f: #F0F0F0;
+    --color-grey-g: #F7F7F7;
+    --color-white: #FFF;
+    /* Text Color */
+    --color-text-base: #333;
+    --color-text-base-inverse: #FFF;
+    --color-text-secondary: #36D57D;
+    --color-text-placeholder: #C9C9C9;
+    --color-text-disabled: #CCC;
+    --color-text-title: #2C405A;
+    --color-text-paragraph: #3F536E;
+    /* Link */
+    --color-link: #6190E8;
+    --color-link-hover: #79A1EB;
+    --color-link-active: #4F7DE2;
+    --color-link-disabled: #BFBFBF;
+    /* 背景色 */
+    --color-bg: #FFF;
+    --color-bg-base: #FAFBFC;
+    --color-bg-light: #ECF5FD;
+    --color-bg-grey: #F7F7F7;
+    /* 边框颜色 */
+    --color-border-base: #C5D9E8;
+    --color-border-split: tint(--color-border-base, 20%);
+    --color-border-light: tint(--color-border-base, 30%);
+    --color-border-lighter: tint(--color-border-base, 50%);
+    --color-border-lightest: tint(--color-border-base, 80%);
+    --color-border-grey: #CCC;
+    /* 图标颜色 */
+    --color-icon-base: #CCC;
+  }

@@ -1,0 +1,37 @@
+<!-- 没有 formid 的标准 button -->
+<button
+  class="x-button {{typeClass}} {{sizeClass}} {{borderClass}} {{loadingClass}} {{disabledClass}}"
+  open-type='{{openType}}'
+  bind:tap='onClick'
+  bind:getuserinfo="getuserinfo"
+  bind:getphonenumber="getphonenumber"
+  wx:if='{{!needFormId}}'
+>
+  <x-loading
+    class="x-button-loading"
+    wx:if="{{loading}}"
+  ></x-loading>
+  <slot></slot>
+</button>
+
+<!-- 可以传 formid 的 button -->
+<form
+  report-submit
+  bind:submit='submit'
+  wx:if='{{needFormId}}'
+>
+  <button
+    class="x-button {{typeClass}} {{sizeClass}} {{borderClass}} {{disabledClass}}"
+    open-type='{{openType}}'
+    form-type='submit'
+    bind:tap='onClick'
+    bind:getuserinfo="getuserinfo"
+    bind:getphonenumber="getphonenumber"
+  >
+    <x-loading
+      class="x-button-loading"
+      wx:if="{{loading}}"
+    ></x-loading>
+    <slot></slot>
+  </button>
+</form>

@@ -1,0 +1,12 @@
+<x-cell>
+
+  <Notfound wx:if='{{isNull}}' text='你还没有收到名片哦' image='/static/image/nocard@2x.png'>
+    <x-button wx:if='{{isNull}}' class='goInfo' borderless type='primary' bindtap='goInfo'>查看更多</x-button>
+  </Notfound>
+
+  <scroll-view class='scroller' scroll-y wx:if='{{!isNull}}'>
+    <view class="defaultCard" wx:if='{{showDefaultCard}}'>请选择默认联系人</view>
+    <Card wx:for='{{cardList}}' wx:key='{{item.id}}' data-value='{{item.id}}' card='{{item}}' />
+  </scroll-view>
+
+</x-cell>

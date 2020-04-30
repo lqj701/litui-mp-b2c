@@ -1,0 +1,21 @@
+<x-cell class="product" height='100vh' background='#eee' wx:if='{{!isSetEc}}'>
+  <Topbar data='{{topbarData}}'></Topbar>
+  <Notfound wx:if='{{isNull}}' text='该用户还未添加产品哦' image='/static/image/noproduct@2x.png'></Notfound>
+  <scroll-view class='scroller' scroll-y bindscrolltolower='scrolltolower' lower-threshold='600' scroll-with-animation>
+    <view class='card-wrapper' wx:for='{{productListData}}' wx:key='{{item.id}}' data-value='{{item.id}}' bindtap='goto'>
+      <Card data='{{item}}'></Card>
+    </view>
+  </scroll-view>
+</x-cell>
+
+<x-cell class="ec" height='100vh' background='#eee' wx:if='{{isSetEc}}'>
+  <Echeader title='{{ecHeader}}'></Echeader>
+  <Notfound wx:if='{{isNull}}' text='该用户还未添加商品哦' image='/static/image/noproduct@2x.png'></Notfound>
+  <scroll-view class='scroller' scroll-y bindscrolltolower='scrolltolower' lower-threshold='600' scroll-with-animation>
+    <view class='card-wrapper' wx:for='{{ecProductListData}}' wx:key='{{item.id}}'>
+      <EcCard data='{{item}}'></EcCard>
+    </view>
+  </scroll-view>
+</x-cell>
+
+<Auth wx:if='{{authVisible}}'></Auth>

@@ -1,0 +1,104 @@
+.menu {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .wrapper {
+    position: relative;
+    padding: 80rpx;
+    background: rgba(255, 255, 255, 0.233);
+    box-sizing: border-box;
+    border-radius: 2rpx;
+    box-shadow: 0 20rpx 16rpx -16rpx rgba(0, 0, 0, 0.6);
+    .start {
+      position: relative;
+      font-size: 50rpx;
+      border: 6rpx solid #eee;
+      border-radius: 12rpx;
+      padding: 16rpx 20rpx;
+      text-align: center;
+      margin-bottom: 40rpx;
+    }
+    .more {
+      position: relative;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      font-size: 40rpx;
+      .more-item {
+        padding: 12rpx;
+      }
+    }
+  }
+}
+
+.finish {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .wrapper {
+    position: relative;
+    padding: 80rpx;
+    background: rgba(255, 255, 255, 0.233);
+    box-sizing: border-box;
+    border-radius: 2rpx;
+    box-shadow: 0 20rpx 16rpx -16rpx rgba(0, 0, 0, 0.6);
+    .start {
+      position: relative;
+      font-size: 50rpx;
+      border: 6rpx solid #eee;
+      border-radius: 12rpx;
+      padding: 16rpx 20rpx;
+      text-align: center;
+      margin-bottom: 40rpx;
+    }
+    .score {
+      position: relative;
+      margin-bottom: 40rpx;
+    }
+  }
+}
+
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('https://i.loli.net/2018/09/23/5ba73377d7d53.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(2rpx);
+}
+
+.bg-filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6)
+}

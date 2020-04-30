@@ -1,0 +1,50 @@
+<view
+  class='container'
+  bindtap='goBilling'
+>
+
+  <view class='header'>
+    <view class='header-title'>{{orderStatus}}</view>
+    <view class='header-date'>{{order.order.createdAt}}</view>
+  </view>
+
+  <view class='goods'>
+    <view
+      class='items'
+      wx:for='{{order.orderItemList}}'
+      wx:key='item'
+    >
+      <x-image
+        class='item-cover'
+        src='{{item.ecGoods.ecGoodsImage}}'
+        width='160rpx'
+        height='160rpx'
+      />
+      <view class='item-info'>
+        <view class='item-info-name'>{{item.ecProduct.ecProductName}}</view>
+        <view class="info-block">
+          <view class="value">{{item.value}}</view>
+          <view class="count">X{{item.orderItem.count}}</view>
+        </view>
+        <view class="price">¥{{item.ecGoods.price}}</view>
+      </view>
+    </view>
+
+    <view class='amount'>
+      <view>合计：</view>
+      <view class='amount-number'>¥{{amount}}</view>
+    </view>
+  </view>
+
+  <view
+    class='action'
+    wx:if='{{order.order.status === 0}}'
+  >
+    <!-- <view class='cancel'>取消订单</view> -->
+    <view
+      class='pay'
+      bindtap='makePayment'
+    >继续支付</view>
+  </view>
+
+</view>

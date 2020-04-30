@@ -1,0 +1,40 @@
+<view class='tabbar'>
+  <view class='tabbar-left'>
+    <view class="tabbar-left-item" bindtap='goEcList'>
+      <image class='icon' src='/static/icon/ec-home.svg'></image>
+      <view class='text'>商城首页</view>
+    </view>
+    <view class="tabbar-left-item" wx:if='{{easyBuy}}'>
+      <form bindsubmit='formSubmit' report-submit='true'>
+        <button formType='submit' wx:if='{{!hasBindPhone}}' open-type="getPhoneNumber" bindgetphonenumber='getPhoneNumber'>
+          <image class='icon' src='/static/icon/contact.svg'></image>
+          <view class='text'>咨询</view>
+        </button>
+        <button formType='submit' wx:if='{{hasBindPhone}}' bindtap='onClickLeftImBtn'>
+          <image class='icon' src='/static/icon/contact.svg'></image>
+          <view class='text'>咨询</view>
+        </button>
+      </form>
+    </view>
+  </view>
+  <view class="tabbar-right" wx:if='{{easyBuy}}'>
+    <view class='tabbar-right-item' bindtap='goCart'>
+      <view class='tabbar-right-text'>购物车</view>
+    </view>
+    <view class='tabbar-right-item' bindtap='goBilling'>
+      <view class='tabbar-right-text'>立即购买</view>
+    </view>
+  </view>
+  <view class="tabbar-right" wx:if='{{!easyBuy}}'>
+    <form bindsubmit='formSubmit' report-submit open-type="getPhoneNumber" bindgetphonenumber='getPhoneNumber' wx:if="{{text === '立即沟通'}}">
+      <button class='tabbar-right-item--close tabbar-right-item-contact' formType='submit' bindtap='onClickRightImBtn'>
+        <view class='tabbar-right-text'>{{text}}</view>
+      </button>
+    </form>
+    <form bindsubmit='formSubmit' report-submit wx:if="{{text !== '立即沟通'}}">
+      <button class='tabbar-right-item--close' formType='submit' bindtap='onClickRightImBtn'>
+        <view class='tabbar-right-text'>{{text}}</view>
+      </button>
+    </form>
+  </view>
+</view>

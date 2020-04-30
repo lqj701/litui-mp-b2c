@@ -1,0 +1,27 @@
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  align-items: flex-start;
+}
+
+.block {
+  width: 690rpx;
+  background: #fff;
+  padding: 18rpx 30rpx;
+  margin-top: 30rpx;
+}
+
+.title {
+  font-size: 34rpx;
+  border-bottom: 1rpx solid #eee;
+  padding-bottom: 6rpx;
+}
+
+.content {
+  padding-top: 6rpx;
+}
+
+.item {
+  font-size: 30rpx;
+  margin: 6rpx 0;
+}

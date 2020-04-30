@@ -1,0 +1,5 @@
+<view class='count'>
+  <view class='{{countLeftClassName}}' bindtap='minus'>-</view>
+  <view class='count-center'>{{count}}</view>
+  <view class='{{countRightClassName}}' bindtap='add'>+</view>
+</view>

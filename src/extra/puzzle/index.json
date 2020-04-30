@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "拼图大作战",
+  "usingComponents": {
+    "puzzle-main": "./puzzle-main/index",
+    "puzzle-menu": "./puzzle-menu/index"
+  }
+}

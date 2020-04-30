@@ -1,0 +1,33 @@
+.score {
+  position: fixed;
+  top: 40rpx;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  position: fixed;
+  left: 30rpx;
+  right: 30rpx;
+  bottom: 30rpx;
+  width: 690rpx;
+  height: 1050rpx;
+  background: #eee;
+  margin: auto;
+  border-radius: 10rpx;
+  overflow: hidden;
+  image {
+    position: absolute;
+    width: 230rpx;
+    height: 350rpx;
+    transition: all ease 0.2s;
+  }
+  .selected {
+    z-index: 2;
+    box-shadow: 0 0 10rpx #f00;
+    border: 2rpx solid green;
+    transform: scale(1.1);
+  }
+}

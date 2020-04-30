@@ -1,0 +1,41 @@
+<view class="x-list">
+  <view
+    class="x-list-header"
+    wx:if='{{header}}'
+  >{{header}}</view>
+  <view class="x-list-content">
+    <view
+      class="x-list-content-item"
+      data-item='{{item}}'
+      wx:for='{{content}}'
+      wx:key='item.id'
+      bind:tap='onClickItem'
+    >
+      <image
+        class="x-list-content-item-icon x-list-content-item-icon--left"
+        src='{{item.icon}}'
+        wx:if="{{iconPosition === 'left'}}"
+        lazy-load
+      />
+      <view class="x-list-content-item-title">{{item.title}}</view>
+      <view class="x-list-content-item-detail">{{item.detail}}</view>
+      <image
+        class="x-list-content-item-icon"
+        src='{{item.icon}}'
+        wx:if="{{iconPosition === 'right'}}"
+        lazy-load
+      />
+    </view>
+  </view>
+  <view
+    class="x-list-action"
+    wx:if='{{action}}'
+  >
+    <x-button
+      type='primary'
+      needFormId
+      bind:click='onClickAction'
+      bind:submit='onSubmit'
+    >{{action}}</x-button>
+  </view>
+</view>

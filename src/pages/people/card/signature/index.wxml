@@ -1,0 +1,12 @@
+<x-cell
+  class="container"
+  wx:if='{{visible}}'
+>
+  <view class="header">
+    个性签名
+  </view>
+  <text
+    class="content"
+    space='nbsp'
+  >{{signature}}</text>
+</x-cell>

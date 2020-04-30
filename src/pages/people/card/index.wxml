@@ -1,0 +1,51 @@
+<scroll-view class="scroller">
+  <view class="section">
+    <Information information='{{information}}' appType='{{appType}}' bindshowActionSheet='showActionSheet'
+      bindshowContactModal='showContactModal' />
+    <CardInfo cardInfo='{{cardInfo}}' supportState='{{supportState}}' bindshowActionSheet='showActionSheet' />
+  </view>
+  <view class="section">
+    <Detail detail='{{detail}}'></Detail>
+  </view>
+  <view class="section">
+    <Signature signature='{{signature}}'></Signature>
+  </view>
+  <view class="section">
+    <Product product='{{product}}'></Product>
+  </view>
+  <view class="section">
+    <Photo photo='{{photo}}'></Photo>
+  </view>
+</scroll-view>
+<view class='gohome' bindtap='gohome' wx:if='{{gohomeVisible}}'>
+  <x-icon class="gohome-icon" src='/static/icon/gohome.svg' size='46rpx' />
+</view>
+
+<Auth bindgetauth='onGetAuth' wx:if='{{authVisible && !hongbaoVisible}}'></Auth>
+<!-- <Hongbao orderId='{{orderId}}' redpacketId='{{redpacketId}}' auth='{{authVisible}}' salesData='{{redpacketInfo}}' hongbaoVisible='{{hongbaoVisible}}'></Hongbao> -->
+<ActionSheet visible='{{actionSheetVisible}}' bindhideActionSheet='hideActionSheet'></ActionSheet>
+
+<x-modal visible='{{unreadModalVisible}}'>
+  <view class="unreadModalTitle">{{unreadModalTitle}}</view>
+  <view class="unreadModalContent">{{unreadModalContent}}</view>
+  <form class="unreadModalForm" bindsubmit='formSubmit' report-submit>
+    <view class="unreadModalAction">
+      <button class="unreadModalButton" formType='submit' bindtap='unreadModalCancel'>取消</button>
+      <button class="unreadModalButton" formType='submit' bindtap='unreadModalComfirm'>确定</button>
+    </view>
+  </form>
+</x-modal>
+
+<x-modal visible='{{contactModalVisible}}'>
+  <view class="contactModalContent">
+    <image class="closeContactModal" src='/static/icon/close.svg' bindtap='closeContactModal' lazy-load />
+    <image class="avatar" src='{{information.avatar}}'></image>
+    <view class="contact" bindtap='makePhoneCall' bindtap='makePhoneCall'>直接电话咨询</view>
+    <button class='getPhoneNumber' bindtap='hasPhoneNumber' wx:if='{{hasBindphone}}'>
+      留下电话，专属客服与您沟通
+    </button>
+    <button class='getPhoneNumber' open-type='getPhoneNumber' bindgetphonenumber='getPhoneNumber' wx:if='{{!hasBindphone}}'>
+      留下电话，专属客服与您沟通
+    </button>
+  </view>
+</x-modal>

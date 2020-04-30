@@ -1,0 +1,13 @@
+<view class='introduce'>
+  <view class='introduce-title'>商品详情</view>
+  <view class='introduce-image-wrapper'>
+    <x-image
+      src='{{item}}'
+      wx:for='{{data}}'
+      wx:key='item'
+      preview
+      mode='widthFix'
+      width="750rpx"
+    />
+  </view>
+</view>

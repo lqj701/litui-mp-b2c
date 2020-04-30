@@ -1,0 +1,5 @@
+<view class='container' wx:if='{{snapshot}}'>
+  <view class='title'>{{title}}</view>
+  <view class='detail' wx:if='{{isPay}}'>{{detail}}</view>
+  <view class='detail' wx:if='{{!isPay}}'>剩余：{{remainTime}}，订单将自动关闭，请尽快支付</view>
+</view>

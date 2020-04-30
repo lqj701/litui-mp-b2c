@@ -1,0 +1,10 @@
+.container{
+  width: 750rpx;
+  height: 100vh;
+}
+
+.sroller{
+  width: 750rpx;
+  height: calc(100vh - 84rpx);
+  margin-top: 84rpx;
+}

@@ -1,0 +1,19 @@
+<view class='actionbar'>
+
+  <form bindsubmit='formSubmit' report-submit='true'>
+    <button class='actionbar-item' bindtap='support' formType='submit'>
+      <image class='icon' src='{{likeIcon}}'></image>
+      <text class='title' style='color:{{supportTextColor}}'>点赞 ({{data.support}})</text>
+    </button>
+  </form>
+
+  <form bindsubmit='formSubmit' bind:tap='showShareModal' report-submit='true'>
+    <button class='actionbar-item' formType='submit'>
+      <image class='icon' src='/static/icon/share.svg'></image>
+      <text class='title'>转发 ({{data.forward}})</text>
+    </button>
+  </form>
+
+  <view class='actionbar-mask'></view>
+
+</view>

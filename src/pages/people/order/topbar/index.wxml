@@ -1,0 +1,6 @@
+<view class='container'>
+  <view class='{{nav0ClassName}}' data-index='0' bindtap='switchTab'>全部</view>
+  <view class='{{nav1ClassName}}' data-index='1' bindtap='switchTab'>待付款</view>
+  <view class='{{nav2ClassName}}' data-index='2' bindtap='switchTab'>待发货</view>
+  <view class='{{nav3ClassName}}' data-index='3' bindtap='switchTab'>待收货</view>
+</view>

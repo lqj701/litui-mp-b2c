@@ -1,0 +1,25 @@
+<view class='container'>
+
+  <view class='item'>
+    <x-icon class='item-icon' size='38rpx' src='/static/icon/view.svg' />
+    <text>浏览 {{cardInfo.browsed}}</text>
+  </view>
+
+  <form bindsubmit='formSubmit' report-submit='true'>
+    <button class='item button' bindtap='like' formType='submit'>
+      <view class='item'>
+        <x-icon class='item-icon' src='{{supportIcon}}' size='38rpx' />
+        <text hidden='{{!supportState}}' style='color:#4a8cf2'>赞 {{cardInfo.support}}</text>
+        <text hidden='{{supportState}}' style='color:{{rgba(0, 0, 0, 0.45)}}'>赞 {{cardInfo.support}}</text>
+      </view>
+    </button>
+  </form>
+
+  <form bindsubmit='share' report-submit='true'>
+    <button class='item button' formType='submit'>
+      <x-icon class='item-icon' src='/static/icon/share.svg' size='38rpx' />
+      <text>转发 {{cardInfo.forward}}</text>
+    </button>
+  </form>
+
+</view>

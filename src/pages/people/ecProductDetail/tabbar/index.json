@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "Notfound": "/components/notfound/index"
+  }
+}

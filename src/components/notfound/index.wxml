@@ -1,0 +1,9 @@
+<x-cell height='100vh' background="#efeff4" justifyContent="center">
+
+  <x-image src='{{image}}' width='160rpx' height='112rpx'></x-image>
+
+  <view class='null-text'>{{text}}</view>
+
+  <slot></slot>
+
+</x-cell>

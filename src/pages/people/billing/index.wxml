@@ -1,0 +1,13 @@
+<view class='container'>
+  <scroll-view class="{{tabbarVisible ? 'scroller' : 'scroller scroller--full'}}" scroll-y>
+    <Notice order='{{noticeData}}' snapshot='{{snapshot}}' remainTime='{{remainTime}}' bindorderClosed='orderClosed' />
+    <Address address='{{billingAddress}}' snapshot='{{snapshot}}'></Address>
+    <Products products='{{productsData}}' amount='{{amount}}' snapshot='{{snapshot}}' order='{{order}}'></Products>
+    <Remark bindinputComplete='onInputComplete' snapshot='{{snapshot}}' remark='{{remark}}'></Remark>
+    <ExpiredProducts products='{{expiredProductsData}}' bindclearExpiredProducts='clearExpiredProducts' snapshot='{{snapshot}}'></ExpiredProducts>
+    <Info order='{{order}}' snapshot='{{snapshot}}'></Info>
+  </scroll-view>
+  <Tabbar amount='{{amount}}' state='{{tabbarData}}' visible='{{tabbarVisible}}' bindcreateEcOrder='createEcOrder' bindmakePayment='makePayment'></Tabbar>
+</view>
+
+<Pay visible='{{showEcPay}}' address='{{billingAddress}}' order='{{order}}' bindmakePayment='makePayment'></Pay>

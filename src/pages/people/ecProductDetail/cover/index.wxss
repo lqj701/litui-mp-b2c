@@ -1,0 +1,27 @@
+.cover {
+  width: 750rpx;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  box-shadow: 0rpx 2rpx 5rpx 0rpx rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+}
+
+.cover-swiper {
+  width: 750rpx;
+  height: 750rpx;
+}
+
+.cover-info {
+  padding: 30rpx 20rpx;
+}
+
+.cover-title {
+  color: #000;
+  font-size: 34rpx;
+}
+
+.cover-price {
+  color: #ff4b4f;
+  font-size: 48rpx;
+}

@@ -1,0 +1,37 @@
+.header {
+  width: 630rpx;
+  height: 80rpx;
+  padding: 0rpx 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+}
+
+.header-left {
+  font-size: 34rpx;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 60rpx;
+}
+
+.icon-wrapper {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 0;
+}
+
+.icon-wrapper::after {
+  border: 0;
+}

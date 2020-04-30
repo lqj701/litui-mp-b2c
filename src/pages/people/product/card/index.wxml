@@ -1,0 +1,22 @@
+<view class='container'>
+
+  <view class='cover'>
+    <x-image src='{{data.image}}' mode='aspectFill' width="750rpx" height="562.5rpx" />
+    <view class='ui-triangle-down'></view>
+    <view class='cover-layer'>
+      <text class='cover-layer-name'>{{data.name}}</text>
+      <text class='cover-layer-price'>{{data.price}}</text>
+    </view>
+  </view>
+
+  <view class='mask'></view>
+
+  <view class='content'>
+    <text class="content-title" space='nbsp'>{{data.introduce}}</text>
+    <view class='content-like'>
+      <x-icon size='28rpx' src='/static/icon/like-small.svg'></x-icon>
+      <view>已收到了<text class='text--highlight'>{{data.support}}</text> 个赞 </view>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,51 @@
+<view class='container'>
+
+  <Topbar data='{{topbarData}}'></Topbar>
+
+  <scroll-view scroll-y class='scroller'>
+
+    <view class='product'>
+
+      <swiper class='product-swiper'>
+        <swiper-item>
+          <x-image class='product-cover' preview src='{{item}}' wx:for='{{product.coverImages}}' wx:key='{{item}}' mode='aspectFill'
+            width="750rpx" height="562.5rpx" />
+        </swiper-item>
+      </swiper>
+
+      <view class='product-title'>
+        <view class='product-title-name'>{{product.name}}</view>
+        <view class='product-title-price'>{{product.price}}</view>
+      </view>
+
+      <view class='space-line'></view>
+
+      <view class='product-content'>
+        <text class="product-content-introduce" space='nbsp'>{{product.introduce}}</text>
+        <view class='product-content-like'>
+          <image class='icon' src='/static/icon/like-small.svg'></image> 收到了
+          <text class='text--highlight'>{{product.support}}</text> 个赞
+        </view>
+      </view>
+
+    </view>
+
+    <view class='detail' wx:if='{{!!product.images[0]}}'>
+      <x-image src='{{item}}' wx:for='{{product.images}}' wx:key='{{item}}' preview mode='widthFix' width="100vw" />
+    </view>
+
+  </scroll-view>
+
+  <Actionbar data='{{actionbar}}' supportState='{{supportState}}' bindsupport="onSupport" bind:showShareModal='showShareModal'></Actionbar>
+
+</view>
+
+<Auth wx:if='{{authVisible}}'></Auth>
+
+<view class="share-wrapper" wx:if='{{editShare}}'>
+  <view class="share">
+    <input placeholder='{{shareDefaultValue}}' bindinput='handleShareInput' cursor-spacing='10' />
+    <x-button borderless openType='share' type='primary' size='small' bind:click='closeShare'>转发</x-button>
+  </view>
+  <view class="share-mask" bind:tap='closeShare'></view>
+</view>

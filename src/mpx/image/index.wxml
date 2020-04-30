@@ -1,0 +1,10 @@
+<image
+  class="x-image {{showClass}}"
+  style="width:{{width}};height:{{height}};border-radius:{{radius}}"
+  src="{{src}}"
+  mode="{{mode}}"
+  lazy-load
+  bind:tap="onClick"
+  bind:error="onError"
+  bind:load="onLoad"
+/>

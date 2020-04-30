@@ -1,0 +1,128 @@
+.container {
+  width: 690rpx;
+  padding: 0rpx 30rpx;
+  background: #fff;
+  margin-top: 30rpx;
+}
+
+.topbar {
+  padding: 24rpx 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #E5E5E5;
+}
+
+.topbar .left {
+  font-size: 28rpx;
+  color: #999999;
+}
+
+.topbar .right {
+  font-size: 28rpx;
+  color: #4A8CF2;
+}
+
+.item {
+  margin-bottom: 30rpx;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 30rpx 0rpx;
+  border-bottom: 1rpx solid #E5E5E5;
+}
+
+.item:nth-last-child(1) {
+  border: 0
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.item .icon {
+  width: 56rpx;
+  height: 32rpx;
+  background: rgba(0, 0, 0, 0.20);
+  border-radius: 4rpx;
+  font-size: 22rpx;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item .cover {
+  width: 160rpx;
+  height: 160rpx;
+  margin-left: 20rpx;
+  border-radius: 4rpx;
+}
+
+.detail {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30rpx;
+}
+
+.detail .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 8rpx;
+}
+
+.detail .info .name {
+  font-size: 34rpx;
+  color: rgba(0, 0, 0, 0.45);
+  margin-bottom: 8rpx;
+}
+
+.detail .info .value {
+  min-width: 100rpx;
+  padding: 4rpx 8rpx;
+  height: 48rpx;
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 4rpx;
+  font-size: 28rpx;
+  color: #999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail .info .remark {
+  font-size: 28rpx;
+}
+
+.detail .data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.data .price {
+  font-size: 34rpx;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.data .count {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 30rpx;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.bottom {
+  margin-top: 16rpx;
+  margin-left: 266rpx;
+  font-size: 28rpx;
+}

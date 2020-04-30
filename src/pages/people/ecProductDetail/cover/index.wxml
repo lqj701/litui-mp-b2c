@@ -1,0 +1,24 @@
+<view class='cover'>
+  <swiper
+    class='cover-swiper'
+    autoplay
+  >
+    <block
+      wx:for="{{data.coverImages}}"
+      wx:key='item.id'
+    >
+      <swiper-item class='cover-image'>
+        <x-image
+          preview
+          src="{{item}}"
+          width="750rpx"
+          height="750rpx"
+        />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='cover-info'>
+    <view class='cover-title'>{{data.name}}</view>
+    <view class='cover-price'>¥{{data.price}}</view>
+  </view>
+</view>

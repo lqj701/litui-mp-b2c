@@ -1,0 +1,25 @@
+<view class='container' wx:if='{{visible}}'>
+  <view class='mask'></view>
+  <view class='content'>
+    <view class='title'>
+      确认付款
+      <image class='icon close' src='/static/icon/close.svg' bindtap='close'></image>
+    </view>
+    <view class='item'>
+      <view class='item-title'>实付金额</view>
+      <view class='item-content'>¥{{order.actualMoney}}</view>
+    </view>
+    <view class='item'>
+      <view class='item-title'>收货地址</view>
+      <view class='item-content'>
+        <view class='address-people'>{{address.consignee}}，{{address.phone}}</view>
+        <view class='address-detail'>{{address.province}}{{address.city}}{{address.area}}{{address.address}}</view>
+      </view>
+    </view>
+  </view>
+  <form bindsubmit='formSubmit' report-submit='true'>
+    <button class='action' formType='submit' bindtap='makePayment'>
+      立即支付
+    </button>
+  </form>
+</view>

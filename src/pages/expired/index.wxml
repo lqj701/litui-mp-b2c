@@ -1,0 +1,19 @@
+<view class="container">
+  <x-image
+    class="icon"
+    src='/static/icon/expire.png'
+    width="200rpx"
+    height="140rpx"
+  />
+  <view class="text">该名片已失效</view>
+  <view
+    class='gohome'
+    bindtap='gohome'
+  >
+    <image
+      class='gohome-icon'
+      src='/static/icon/gohome.svg'
+      lazy-load
+    />
+  </view>
+</view>

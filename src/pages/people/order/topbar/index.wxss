@@ -1,0 +1,27 @@
+.container {
+  width: 750rpx;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background: #fff;
+}
+
+.nav {
+  flex: 1;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+  color: #303030;
+  border-bottom: 4rpx solid #FFF;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav--active {
+  border-bottom: 4rpx solid #4A8CF2;
+  color: #4A8CF2;
+}

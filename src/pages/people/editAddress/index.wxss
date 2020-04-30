@@ -1,0 +1,67 @@
+.container {
+  width: 750rpx;
+  height: 100vh;
+}
+
+.form {
+  margin-top: 30rpx;
+  background: #fff;
+  width: 750rpx;
+}
+
+.block {
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  width: 690rpx;
+  height: 88rpx;
+  font-size: 34rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.block:nth-child(1), .block:nth-child(2), .block:nth-child(3) {
+  border-bottom: 1rpx solid #e5e5e5;
+}
+
+.block:nth-child(3) .title{
+  width: 690rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.block:nth-child(3) .placeholder{
+  margin-left: 44rpx;
+  color: #b2b2b2;
+}
+
+.title {
+  width: 136rpx;
+}
+
+.input {
+  flex: 1;
+  margin-left: 44rpx;
+}
+
+.placeholder {
+  color: #b2b2b2;
+}
+
+.save {
+  width: 670rpx;
+  height: 94rpx;
+  display: flex;
+  margin-top: 60rpx;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 36rpx;
+  background: rgba(74, 140, 242, 0.4);
+  border: 2rpx solid rgba(5, 5, 5, 0.08);
+  border-radius: 10rpx;
+}
+
+.save--active {
+  background: rgba(74, 140, 242, 1);
+}

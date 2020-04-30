@@ -1,0 +1,26 @@
+<view class='container'>
+  <view class='address' data-id='{{address.id}}' bindtap='selectAddress'>
+    <view class='address-customer' data-id='{{address.id}}'>{{address.consignee}}，{{address.phone}}</view>
+    <view class='address-detail' data-id='{{address.id}}'>{{address.province}}{{address.city}}{{address.area}}{{address.address}}</view>
+  </view>
+  <view class='action'>
+    <view class='action-left' wx:if='{{!address.enable}}'>
+      <image class='action-left-icon' src='/static/icon/select.svg' data-id='{{address.id}}' bindtap='setDefault'></image>
+      <view data-id='{{address.id}}' bindtap='setDefault'>设为默认</view>
+    </view>
+    <view class='action-left action-left--active' wx:if='{{address.enable}}'>
+      <image class='action-left-icon' src='/static/icon/select-active.svg' data-id='{{address.id}}' bindtap='setDefault'></image>
+      <view data-id='{{address.id}}' bindtap='setDefault'>设为默认</view>
+    </view>
+    <view class='action-right'>
+      <view class='action-right-item' data-id='{{address.id}}' bindtap='editAddress'>
+        <image class='action-right-icon' src='/static/icon/edit.svg'></image>
+        编辑
+      </view>
+      <view class='action-right-item' data-id='{{address.id}}' bindtap='deleteAddress'>
+        <image class='action-right-icon' src='/static/icon/delete.svg'></image>
+        删除
+      </view>
+    </view>
+  </view>
+</view>

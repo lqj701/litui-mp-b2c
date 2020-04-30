@@ -1,0 +1,18 @@
+<view class='container'>
+
+  <Topbar bindswitchTab='switchTab' activeTab='{{activeTab}}' />
+
+  <scroll-view class='sroller' wx:if="{{activeTab === '0'}}" scroll-y bindscrolltolower='scrolltolower' lower-threshold='1000' scroll-with-animation>
+    <Card order='{{item}}' wx:for='{{tab0Data}}' wx:key='item' />
+  </scroll-view>
+  <scroll-view class='sroller' wx:if="{{activeTab === '1'}}" scroll-y bindscrolltolower='scrolltolower' lower-threshold='1000' scroll-with-animation>
+    <Card order='{{item}}' wx:for='{{tab1Data}}' wx:key='item' />
+  </scroll-view>
+  <scroll-view class='sroller' wx:if="{{activeTab === '2'}}" scroll-y bindscrolltolower='scrolltolower' lower-threshold='1000' scroll-with-animation>
+    <Card order='{{item}}' wx:for='{{tab2Data}}' wx:key='item' />
+  </scroll-view>
+  <scroll-view class='sroller' wx:if="{{activeTab === '3'}}" scroll-y bindscrolltolower='scrolltolower' lower-threshold='1000' scroll-with-animation>
+    <Card order='{{item}}' wx:for='{{tab3Data}}' wx:key='item' />
+  </scroll-view>
+
+</view>

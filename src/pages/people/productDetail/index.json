@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "Topbar": "/components/topbar/index",
+    "Actionbar": "./actionbar/index",
+    "Auth": "/components/auth/index",
+    "x-image": "/mpx/image/index",
+    "x-button": "/mpx/button/index"
+  }
+}

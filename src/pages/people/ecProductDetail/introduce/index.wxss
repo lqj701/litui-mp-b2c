@@ -1,0 +1,16 @@
+.introduce {
+  width: 750rpx;
+  margin-bottom: 30rpx;
+}
+
+.introduce-title {
+  font-size: 28rpx;
+  color: #888;
+  padding: 30rpx;
+}
+
+.introduce-image-wrapper {
+  width: 750rpx;
+  display: flex;
+  flex-direction: column;
+}
